@@ -1,0 +1,60 @@
+#common setting
+
+[core]
+	filemode=false
+[alias]
+	st = status
+	unstage = reset HEAD --
+	last = log -1 -p
+	br = branch
+	co = commit
+	ch = checkout
+	logAll = log --graph --all
+	commitMark = commit -am 'mark'
+[mergetool]
+	keepBackup = false
+
+# diff and merge tool config
+# Linux
+# add the following to "~/.gitconfig" file
+
+[merge]
+    tool = intellij
+[mergetool "intellij"]
+    cmd = /usr/local/bin/idea merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
+    trustExitCode = true
+
+[diff]
+    tool = intellij
+[difftool "intellij"]
+    cmd = /usr/local/bin/idea diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
+
+
+
+# Mac
+# add the following to "~/.gitconfig" file
+
+[merge]
+    tool = intellij
+[mergetool "intellij"]
+    cmd = /Applications/IntelliJ\\ IDEA\\ CE.app/Contents/MacOS/idea merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
+    trustExitCode = true
+[diff]
+    tool = intellij
+[difftool "intellij"]
+    cmd = /Applications/IntelliJ\\ IDEA\\ CE.app/Contents/MacOS/idea diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
+
+
+
+# Windows
+# add the following to "C:\Users\<username>\.gitconfig" file
+
+[merge]
+    tool = intellij
+[mergetool "intellij"]
+    cmd = cmd.exe //c "\"C:/Program Files (x86)/IntelliJ IDEA Community Edition 12.0/bin/idea.bat\" merge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+    trustExitCode = true
+[diff]
+    tool = intellij
+[difftool "intellij"]
+    cmd = cmd.exe //c "\"C:/Program Files (x86)/IntelliJ IDEA Community Edition 12.0/bin/idea.bat\" diff \"$LOCAL\" \"$REMOTE\""
