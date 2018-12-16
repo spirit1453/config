@@ -13,6 +13,8 @@
 	commitMark = commit -am 'mark'
 [mergetool]
 	keepBackup = false
+[push]
+	default = simple
 
 # diff and merge tool config
 # Linux
