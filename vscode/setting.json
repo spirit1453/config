@@ -1,3 +1,12 @@
 {
+    "files.exclude": {
+        "**/.git": false,
+        "**/.idea": true
+      },
+      "search.exclude": {
+        ".DS_Store": true,
+        "**/.git": true,
+        "**/.idea": true
+      },
     "workbench.colorTheme": "Visual Studio Light"
 }
