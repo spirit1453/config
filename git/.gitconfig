@@ -15,7 +15,8 @@
 	keepBackup = false
 [push]
 	default = simple
-
+[credential]
+	helper = store
 # diff and merge tool config
 # Linux
 # add the following to "~/.gitconfig" file
