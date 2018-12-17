@@ -8,5 +8,7 @@
         "**/.git": true,
         "**/.idea": true
       },
-    "workbench.colorTheme": "Visual Studio Light"
+    "workbench.colorTheme": "Visual Studio Light",
+    "editor.tabSize": 2,
+    "window.openFoldersInNewWindow": "on"
 }
