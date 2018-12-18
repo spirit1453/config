@@ -1,5 +1,7 @@
 {
-    "files.exclude": {
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.exclude": {
         "**/.git": false,
         "**/.idea": true
       },
@@ -8,7 +10,7 @@
         "**/.git": true,
         "**/.idea": true
       },
-    "workbench.colorTheme": "Visual Studio Light",
-    "editor.tabSize": 2,
-    "window.openFoldersInNewWindow": "on"
+  "workbench.colorTheme": "Visual Studio Light",
+  "editor.tabSize": 2,
+  "window.openFoldersInNewWindow": "on"
 }
