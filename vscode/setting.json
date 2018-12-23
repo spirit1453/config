@@ -1,9 +1,11 @@
 {
+  "explorer.confirmDelete": false,
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
   "files.exclude": {
         "**/.git": false,
-        "**/.idea": true
+        "**/.idea": true,
+        "**/._*": true
       },
       "search.exclude": {
         ".DS_Store": true,
