@@ -1,0 +1,14 @@
+copy_line:
+   mac:
+    - cmd
+    - D
+   win:
+     - ctrl
+     - D
+search_line:
+  mac:
+    - cmd
+    - L
+  win:
+    - ctrl
+    - L
