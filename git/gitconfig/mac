@@ -1,4 +1,6 @@
-
+[user]
+	name = catch
+	email = catchspirit37@gmail.com
 [core]
 	filemode=false
 [alias]
