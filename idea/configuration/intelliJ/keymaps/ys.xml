@@ -1,5 +1,18 @@
 <keymap version="1" name="ys" parent="Mac OS X">
+    <action id="CloseContent">
+        <keyboard-shortcut first-keystroke="meta w" />
+    </action>
     <action id="CloseProject">
         <keyboard-shortcut first-keystroke="shift ctrl w" />
     </action>
+    <action id="EditorSelectWord">
+        <keyboard-shortcut first-keystroke="meta s" />
+    </action>
+    <action id="EditorUnSelectWord">
+        <keyboard-shortcut first-keystroke="shift meta s" />
+    </action>
+    <action id="ReopenClosedTab">
+        <keyboard-shortcut first-keystroke="shift meta w" />
+    </action>
+    <action id="SaveAll" />
 </keymap>
